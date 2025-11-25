@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  base: '/smartapp-ui-kit/', // ← 👈 add this line
+  base: '/', // Root path for production site
   plugins: [react()],
   resolve: {
     alias: {

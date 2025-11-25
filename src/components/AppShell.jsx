@@ -1,26 +1,24 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { FiHome, FiSettings, FiMenu } from 'react-icons/fi'
-import logoSrc from '../assets/smartapp-logo.png'
+import { NavLink, Outlet } from 'react-router-dom'
+import { FiHome, FiUsers, FiMail, FiMenu } from 'react-icons/fi'
 
-export default function AppShell({ children }) {
+export default function AppShell() {
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
       <aside className="w-60 bg-gray-900 text-white flex flex-col">
         {/* Logo */}
         <div className="px-6 py-4 flex-shrink-0">
-          <img
-            src={logoSrc}
-            alt="Smart-App"
-            className="w-full h-auto object-contain"
-          />
+          <h1 className="text-xl font-bold">
+            <span className="text-green-600">Search Engine</span>{' '}
+            <span className="text-white">Optimization AI</span>
+          </h1>
         </div>
 
         {/* Nav Links */}
         <nav className="flex-1 px-3 space-y-2">
           <NavLink
-            to="/dashboard"
+            to="/app/seoplatform"
             className={({ isActive }) =>
               `flex items-center px-4 py-2 rounded-lg transition ${
                 isActive
@@ -30,10 +28,10 @@ export default function AppShell({ children }) {
             }
           >
             <FiHome className="mr-3" />
-            Dashboard
+            SEOPlatform
           </NavLink>
           <NavLink
-            to="/settings"
+            to="/app/terapak-solutions"
             className={({ isActive }) =>
               `flex items-center px-4 py-2 rounded-lg transition ${
                 isActive
@@ -42,8 +40,21 @@ export default function AppShell({ children }) {
               }`
             }
           >
-            <FiSettings className="mr-3" />
-            Settings
+            <FiUsers className="mr-3" />
+            Terapak Solutions
+          </NavLink>
+          <NavLink
+            to="/app/contact"
+            className={({ isActive }) =>
+              `flex items-center px-4 py-2 rounded-lg transition ${
+                isActive
+                  ? 'bg-gray-700'
+                  : 'hover:bg-gray-800'
+              }`
+            }
+          >
+            <FiMail className="mr-3" />
+            Contact
           </NavLink>
         </nav>
 
@@ -56,9 +67,9 @@ export default function AppShell({ children }) {
       {/* Main area */}
       <div className="flex-1 flex flex-col bg-white">
         <header className="h-16 border-b px-6 flex items-center shadow-sm">
-          <h1 className="text-xl font-semibold text-gray-800">My Project Dashboard</h1>
+          <h1 className="text-xl font-semibold text-gray-800">SEO Platform</h1>
         </header>
-        <main className="p-8 flex-1 overflow-auto">{children}</main>
+        <main className="p-8 flex-1 overflow-auto"><Outlet /></main>
       </div>
     </div>
   )

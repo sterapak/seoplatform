@@ -1,19 +1,28 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AppShell from './components/AppShell'
-import DashboardPage from './pages/DashboardPage'
-import SettingsPage  from './pages/SettingsPage'
+import LandingPage from './pages/LandingPage'
+import MotivationPage from './pages/MotivationPage'
+import TerapakSolutionsPage from './pages/TerapakSolutionsPage'
+import ContactPage from './pages/ContactPage'
 
 export default function App() {
   return (
     <BrowserRouter>
-      <AppShell>
-        <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/settings"  element={<SettingsPage />} />
-        </Routes>
-      </AppShell>
+      <Routes>
+        {/* Marketing site */}
+        <Route path="/" element={<LandingPage />} />
+        
+        {/* App pages (with AppShell) */}
+        <Route path="/app" element={<AppShell />}>
+          <Route path="seoplatform" element={<MotivationPage />} />
+          <Route path="terapak-solutions" element={<TerapakSolutionsPage />} />
+          <Route path="contact" element={<ContactPage />} />
+        </Route>
+        
+        {/* Default redirect */}
+        <Route path="/app" element={<Navigate to="/app/seoplatform" replace />} />
+      </Routes>
     </BrowserRouter>
   )
 }
