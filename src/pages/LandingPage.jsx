@@ -51,7 +51,7 @@ export default function LandingPage() {
               Watch Demo
             </button>
           </div>
-          <p className="text-sm text-gray-500 mt-4">No credit card required • 14-day free trial</p>
+          <p className="text-sm text-gray-500 mt-4">No credit card required • 14-day free trial • Start optimizing today</p>
         </div>
       </section>
 
