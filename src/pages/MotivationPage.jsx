@@ -18,6 +18,16 @@ export default function MotivationPage() {
             AI-powered tools that automate optimization, track performance, and deliver 
             actionable insights—all at a fraction of the cost of enterprise solutions.
           </p>
+          <p className="text-gray-700 leading-relaxed mt-4">
+            As a team of AI Engineers, we're also using this project to take our AI Code Generation 
+            skills to the next level. By building real-world solutions with modern AI tools, we're 
+            pushing the boundaries of what's possible with AI-assisted development.
+          </p>
+          <p className="text-gray-700 leading-relaxed mt-4 font-semibold">
+            Our long-term goal is to create more tightly coupled SEO solutions specifically 
+            designed for e-commerce platforms, providing seamless integration and superior 
+            performance optimization.
+          </p>
         </div>
       </div>
 
