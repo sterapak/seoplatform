@@ -20,7 +20,7 @@ export default function LandingPage() {
                 About
               </Link>
               <Link
-                to="/app/terapak-solutions"
+                to="/app/seoplatform"
                 className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition"
               >
                 Terapak Solutions
