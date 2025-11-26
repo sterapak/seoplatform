@@ -1,9 +1,36 @@
 import React from 'react'
-import { FiCode, FiDatabase, FiCloud, FiZap, FiShield } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import { FiCode, FiDatabase, FiCloud, FiZap, FiShield, FiArrowRight } from 'react-icons/fi'
 
 export default function MotivationPage() {
   return (
-    <div className="max-w-7xl mx-auto space-y-12 py-8">
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <h1 className="text-2xl font-bold text-green-600">SEO Platform</h1>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Link
+                to="/explore"
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition"
+              >
+                Explore
+              </Link>
+              <Link
+                to="/app/seoplatform"
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition"
+              >
+                Get Started
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div className="max-w-7xl mx-auto space-y-12 py-8 px-4 sm:px-6 lg:px-8">
       <div>
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Motivation</h2>
         <div className="prose prose-lg max-w-none">
@@ -109,6 +136,17 @@ export default function MotivationPage() {
           core tools and libraries are open source, and we contribute back to the 
           communities that make our platform possible.
         </p>
+      </div>
+
+      <div className="text-center pt-8">
+        <Link
+          to="/explore"
+          className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
+        >
+          Explore Capabilities
+          <FiArrowRight className="ml-2" />
+        </Link>
+      </div>
       </div>
     </div>
   )
