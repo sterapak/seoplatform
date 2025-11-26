@@ -14,13 +14,13 @@ export default function MotivationPage() {
             </div>
             <div className="flex items-center space-x-4">
               <Link
-                to="/explore"
+                to="/"
                 className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition"
               >
-                Explore
+                Home
               </Link>
               <Link
-                to="/explore"
+                to="/"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition"
               >
                 Get Started
@@ -140,7 +140,7 @@ export default function MotivationPage() {
 
       <div className="text-center pt-8">
         <Link
-          to="/explore"
+          to="/"
           className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
         >
           Explore Capabilities
