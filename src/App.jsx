@@ -10,11 +10,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Root shows motivation page */}
-        <Route path="/" element={<MotivationPage />} />
+        {/* Root shows landing page (features) */}
+        <Route path="/" element={<LandingPage />} />
         
-        {/* Features/capabilities page */}
-        <Route path="/explore" element={<LandingPage />} />
+        {/* About/Motivation page */}
+        <Route path="/about" element={<MotivationPage />} />
         
         {/* App pages (with AppShell) */}
         <Route path="/app" element={<AppShell />}>
