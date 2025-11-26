@@ -6,7 +6,9 @@ export default defineConfig({
   base: '/', // Root path for production site
   build: {
     outDir: 'dist',
+    copyPublicDir: true,
   },
+  publicDir: 'public',
   plugins: [react()],
   resolve: {
     alias: {
