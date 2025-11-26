@@ -1,5 +1,6 @@
 import React from 'react'
-import { FiCode, FiDatabase, FiCloud, FiZap, FiShield } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import { FiCode, FiDatabase, FiCloud, FiZap, FiShield, FiArrowRight } from 'react-icons/fi'
 
 export default function MotivationPage() {
   return (
@@ -109,6 +110,16 @@ export default function MotivationPage() {
           core tools and libraries are open source, and we contribute back to the 
           communities that make our platform possible.
         </p>
+      </div>
+
+      <div className="text-center pt-8">
+        <Link
+          to="/explore"
+          className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
+        >
+          Explore Capabilities
+          <FiArrowRight className="ml-2" />
+        </Link>
       </div>
     </div>
   )
