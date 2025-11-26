@@ -67,7 +67,7 @@ export default function AppShell() {
       {/* Main area */}
       <div className="flex-1 flex flex-col bg-white">
         <header className="h-16 border-b px-6 flex items-center shadow-sm">
-          <h1 className="text-xl font-semibold text-gray-800">SEO Platform</h1>
+          <h1 className="text-xl font-semibold text-green-600">SEO Platform</h1>
         </header>
         <main className="p-8 flex-1 overflow-auto"><Outlet /></main>
       </div>
