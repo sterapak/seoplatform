@@ -20,7 +20,7 @@ export default function MotivationPage() {
                 Explore
               </Link>
               <Link
-                to="/app/seoplatform"
+                to="/explore"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition"
               >
                 Get Started
