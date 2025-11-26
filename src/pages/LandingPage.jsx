@@ -20,10 +20,16 @@ export default function LandingPage() {
                 About
               </Link>
               <Link
+                to="/app/terapak-solutions"
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition"
+              >
+                Terapak Solutions
+              </Link>
+              <Link
                 to="/app/seoplatform"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition"
               >
-                Get Started
+                Start Free Trial
               </Link>
             </div>
           </div>
@@ -45,7 +51,7 @@ export default function LandingPage() {
               to="/app/seoplatform"
               className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
             >
-              Start Free Trial
+              Get Started
             </Link>
             <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-gray-400 transition">
               Watch Demo
